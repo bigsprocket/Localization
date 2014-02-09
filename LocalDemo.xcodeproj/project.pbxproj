@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2725150518A843F300D9BEF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2725150318A843F300D9BEF9 /* InfoPlist.strings */; };
 		277308EF18A5D4070035C361 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277308EE18A5D4070035C361 /* Foundation.framework */; };
 		277308F118A5D4070035C361 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277308F018A5D4070035C361 /* CoreGraphics.framework */; };
 		277308F318A5D4070035C361 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277308F218A5D4070035C361 /* UIKit.framework */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2725150418A843F300D9BEF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		277308EB18A5D4070035C361 /* LocalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277308EE18A5D4070035C361 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		277308F018A5D4070035C361 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -143,6 +145,7 @@
 				277308F618A5D4070035C361 /* LocalDemo-Info.plist */,
 				277308FA18A5D4070035C361 /* main.m */,
 				277308FC18A5D4070035C361 /* LocalDemo-Prefix.pch */,
+				2725150318A843F300D9BEF9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2773090718A5D4070035C361 /* Images.xcassets in Resources */,
+				2725150518A843F300D9BEF9 /* InfoPlist.strings in Resources */,
 				2773092718A5DC4D0035C361 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +270,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2725150318A843F300D9BEF9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2725150418A843F300D9BEF9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2773091B18A5D4070035C361 /* Debug */ = {
@@ -385,6 +400,7 @@
 				2773091F18A5D4070035C361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
