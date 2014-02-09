@@ -10,7 +10,6 @@
 #import "LDDEvent.h"
 #import "LDDEventListCell.h"
 #import "LDDAddEditEventViewController.h"
-#import "NSDate+BSPFoundation.h"
 
 static CGFloat defaultRowHeight;
 static NSString * cellIdentifier = @"LDDEventListCell";
@@ -19,6 +18,7 @@ static NSString * kKeyEditSegue = @"EditItem";
 
 @interface LDDEventListViewController ()
 @property (nonatomic, strong) NSMutableArray *events;
+
 @end
 
 @implementation LDDEventListViewController
@@ -34,18 +34,15 @@ static NSString * kKeyEditSegue = @"EditItem";
 
 #pragma mark - tableview delegate/datasource
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.events count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LDDEventListCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     LDDEvent *event = [self.events objectAtIndex:indexPath.row];
     
@@ -56,12 +53,9 @@ static NSString * kKeyEditSegue = @"EditItem";
     return cell;
 }
 
-
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
     // Only compute the default height of a row once
-    if (!defaultRowHeight)
-    {
+    if (!defaultRowHeight) {
         LDDEventListCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
         defaultRowHeight = cell.bounds.size.height;
     }
@@ -69,11 +63,8 @@ static NSString * kKeyEditSegue = @"EditItem";
     return defaultRowHeight;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [self tableView:tableView cellForRowAtIndexPath:indexPath];
-
-    CGRect frame = cell.bounds;
     
     [cell setNeedsUpdateConstraints];
     [cell updateConstraintsIfNeeded];
@@ -82,18 +73,18 @@ static NSString * kKeyEditSegue = @"EditItem";
     [cell layoutIfNeeded];
     
     CGSize layoutSize = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    
     return MAX(44.0, layoutSize.height);
 }
 
-
 #pragma mark - My segue handling
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     LDDAddEditEventViewController *editor = [segue destinationViewController];
 
     NSString *segueId = [segue identifier];
+    
     if ([segueId isEqualToString:kKeyEditSegue]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         LDDEvent *event = [self.events objectAtIndex:indexPath.row];
@@ -147,7 +138,7 @@ static NSString * kKeyEditSegue = @"EditItem";
     
     LDDEvent *event = [[LDDEvent alloc] init];
     event.name = @"iOS Localization";
-    event.date = [NSDate dateFromISO8601:@"2014-02-18T19:00:00-0600"];
+    event.date = [NSDate dateFromShortDate:@"02/18/2014"];
     event.note = @"Examine the tools and processes for iOS app localization";
     
     [self.events addObject:event];

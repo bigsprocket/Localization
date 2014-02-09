@@ -1,12 +1,11 @@
 //
-//  NSIndexPath+BSPTouch.h
-//  BSPTouch7
+//  NSIndexPath+LDD.h
 //
-//  Created by Kyle Davis on 10/25/13.
-//  Copyright (c) 2013 BigSprocket, LLC. All rights reserved.
+//  Created by Kyle Davis on 2/9/14.
+//  Copyright 2014 BigSprocket, LLC. All rights reserved.
 //
 
-@interface NSIndexPath (BSPTouch)
+@interface NSIndexPath (LDD)
 
 - (BOOL)isEqualToIndexPath:(NSIndexPath *)otherPath;
 - (NSString *)stringRepresentation;

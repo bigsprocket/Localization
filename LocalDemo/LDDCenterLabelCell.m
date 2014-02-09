@@ -10,6 +10,7 @@
 
 @interface LDDCenterLabelCell()
 @property (nonatomic, strong) IBOutlet UILabel *captionLabel;
+
 @end
 
 @implementation LDDCenterLabelCell
@@ -18,8 +19,7 @@
     return self.captionLabel.text;
 }
 
-- (void)setCaption:(NSString *)caption
-{
+- (void)setCaption:(NSString *)caption {
     self.captionLabel.text = caption;
 }
 
@@ -27,8 +27,7 @@
     return self.captionLabel.textColor;
 }
 
-- (void)setCaptionColor:(UIColor *)captionColor
-{
+- (void)setCaptionColor:(UIColor *)captionColor {
     self.captionLabel.textColor = captionColor;
 }
 

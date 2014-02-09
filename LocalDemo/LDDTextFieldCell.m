@@ -13,7 +13,6 @@
 
 @end
 
-
 @implementation LDDTextFieldCell
 {
     BOOL registered;
@@ -102,7 +101,6 @@
     if (selected) [self becomeFirstResponder];
 }
 
-
 - (void)registerForNotifications {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:UITextFieldTextDidChangeNotification object:self.textField];
     self.textField.delegate = self;
@@ -113,7 +111,6 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:self.textField];
     registered = NO;
 }
-
 
 - (void)didMoveToSuperview {
     if (self.superview) {

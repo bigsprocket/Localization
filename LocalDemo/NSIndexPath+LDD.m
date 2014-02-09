@@ -1,14 +1,13 @@
 //
-//  NSIndexPath+BSPTouch.m
-//  BSPTouch7
+//  NSIndexPath+LDD.m
 //
-//  Created by Kyle Davis on 10/25/13.
-//  Copyright (c) 2013 BigSprocket, LLC. All rights reserved.
+//  Created by Kyle Davis on 2/9/14.
+//  Copyright 2014 BigSprocket, LLC. All rights reserved.
 //
 
-#import "NSIndexPath+BSPTouch.h"
+#import "NSIndexPath+LDD.h"
 
-@implementation NSIndexPath (BSPTouch)
+@implementation NSIndexPath (LDD)
 
 - (BOOL)isEqualToIndexPath:(NSIndexPath *)otherPath; {
     if (!otherPath) return NO;

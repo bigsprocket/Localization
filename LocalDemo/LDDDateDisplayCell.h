@@ -13,4 +13,5 @@
 @property (nonatomic, strong) NSDate *date;
 @property (nonatomic, strong) NSString *caption;
 @property (nonatomic, strong) NSString *noDatePlaceholder;
+
 @end

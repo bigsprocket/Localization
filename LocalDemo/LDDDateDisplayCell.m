@@ -7,10 +7,10 @@
 //
 
 #import "LDDDateDisplayCell.h"
-#import "NSDate+BSPFoundation.h"
 
 @implementation LDDDateDisplayCell
-@synthesize date=_date;
+
+@synthesize date = _date;
 
 - (void)setDate:(NSDate *)date {
     _date = date;

@@ -8,8 +8,6 @@
 
 #import "LDDAddEditEventViewController.h"
 #import "LDDEvent.h"
-#import "NSArray+BSPTouch.h"
-#import "NSIndexPath+BSPTouch.h"
 #import "LDDDatePickerCell.h"
 #import "LDDDateDisplayCell.h"
 #import "LDDCenterLabelCell.h"
@@ -26,6 +24,7 @@ static int kTagDeleteConfirmation = 456;
 
 @interface LDDAddEditEventViewController ()
 @property (nonatomic, strong) IBOutlet UIBarButtonItem *doneButton;
+
 @end
 
 @implementation LDDAddEditEventViewController
@@ -105,8 +104,7 @@ static int kTagDeleteConfirmation = 456;
     NSInteger section = indexPath.section;
     NSInteger row = indexPath.row;
     
-    if (pickerPath)
-    {
+    if (pickerPath) {
         if ([pickerPath isEqualToIndexPath:indexPath]) {
             // it's the date picker
             LDDDatePickerCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LDDDatePickerCell class])];
@@ -168,8 +166,7 @@ static int kTagDeleteConfirmation = 456;
     return nil;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
     BOOL removePicker = (pickerPath && ![pickerPath isEqualToIndexPath:indexPath]);
@@ -177,6 +174,7 @@ static int kTagDeleteConfirmation = 456;
     
     if (lastRowSelected) {
         UITableViewCell *cell = [tableView cellForRowAtIndexPath:lastRowSelected];
+        
         if ([cell respondsToSelector:@selector(resignFirstResponder)]) {
             [cell resignFirstResponder];
         }
@@ -198,13 +196,11 @@ static int kTagDeleteConfirmation = 456;
     }
 }
 
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 44.0;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     // We can cache these because the heights on this form are static. If any row
     // wasn't static, this wouldn't work.
     NSNumber *height = [heights valueForKey:[indexPath stringRepresentation]];
@@ -231,8 +227,7 @@ static int kTagDeleteConfirmation = 456;
 
 #pragma mark - segue handling
 
-- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
-{
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     if ([identifier isEqualToString:kKeyDeleteSegue]) {
         [self scheduleNextRunLoopToCallSelector:@selector(confirmDelete) withObject:nil];
 
@@ -244,8 +239,7 @@ static int kTagDeleteConfirmation = 456;
 
 # pragma mark - cell events
 
-- (void)confirmDelete
-{
+- (void)confirmDelete {
     UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self
                                               cancelButtonTitle:@"Cancel"   // TODO: Localize
                                          destructiveButtonTitle:@"Delete"   // TODO: Localize
@@ -254,8 +248,7 @@ static int kTagDeleteConfirmation = 456;
     [sheet showInView:self.view];
 }
 
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
-{
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (actionSheet.tag == kTagDeleteConfirmation) {
 
         if (buttonIndex == actionSheet.destructiveButtonIndex) {
@@ -315,7 +308,6 @@ static int kTagDeleteConfirmation = 456;
 
 #pragma mark - Miscellaneous
 
-
 - (void)registerForNotifications {
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
     
@@ -353,8 +345,7 @@ static int kTagDeleteConfirmation = 456;
     [[NSRunLoop mainRunLoop] performSelector:selector target:self argument:obj order:0 modes:@[NSDefaultRunLoopMode]];
 }
 
-- (void)addDatePickerBelowIndex:(NSIndexPath *)indexPath
-{
+- (void)addDatePickerBelowIndex:(NSIndexPath *)indexPath {
     [self dismissKeyboard];
 
     [self.tableView beginUpdates];
