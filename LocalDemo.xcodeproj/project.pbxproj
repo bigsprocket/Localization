@@ -10,7 +10,6 @@
 		277308EF18A5D4070035C361 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277308EE18A5D4070035C361 /* Foundation.framework */; };
 		277308F118A5D4070035C361 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277308F018A5D4070035C361 /* CoreGraphics.framework */; };
 		277308F318A5D4070035C361 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277308F218A5D4070035C361 /* UIKit.framework */; };
-		277308F918A5D4070035C361 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 277308F718A5D4070035C361 /* InfoPlist.strings */; };
 		277308FB18A5D4070035C361 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 277308FA18A5D4070035C361 /* main.m */; };
 		277308FF18A5D4070035C361 /* LDDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 277308FE18A5D4070035C361 /* LDDAppDelegate.m */; };
 		2773090518A5D4070035C361 /* LDDEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773090418A5D4070035C361 /* LDDEventListViewController.m */; };
@@ -37,7 +36,6 @@
 		277308F018A5D4070035C361 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		277308F218A5D4070035C361 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		277308F618A5D4070035C361 /* LocalDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocalDemo-Info.plist"; sourceTree = "<group>"; };
-		277308F818A5D4070035C361 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		277308FA18A5D4070035C361 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		277308FC18A5D4070035C361 /* LocalDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocalDemo-Prefix.pch"; sourceTree = "<group>"; };
 		277308FD18A5D4070035C361 /* LDDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDDAppDelegate.h; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				277308F618A5D4070035C361 /* LocalDemo-Info.plist */,
-				277308F718A5D4070035C361 /* InfoPlist.strings */,
 				277308FA18A5D4070035C361 /* main.m */,
 				277308FC18A5D4070035C361 /* LocalDemo-Prefix.pch */,
 			);
@@ -239,7 +236,6 @@
 			files = (
 				2773090718A5D4070035C361 /* Images.xcassets in Resources */,
 				2773092718A5DC4D0035C361 /* Main.storyboard in Resources */,
-				277308F918A5D4070035C361 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,17 +266,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		277308F718A5D4070035C361 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				277308F818A5D4070035C361 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2773091B18A5D4070035C361 /* Debug */ = {
