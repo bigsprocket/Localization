@@ -13,25 +13,23 @@
 		277308F918A5D4070035C361 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 277308F718A5D4070035C361 /* InfoPlist.strings */; };
 		277308FB18A5D4070035C361 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 277308FA18A5D4070035C361 /* main.m */; };
 		277308FF18A5D4070035C361 /* LDDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 277308FE18A5D4070035C361 /* LDDAppDelegate.m */; };
-		2773090218A5D4070035C361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2773090018A5D4070035C361 /* Main.storyboard */; };
-		2773090518A5D4070035C361 /* LDDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773090418A5D4070035C361 /* LDDViewController.m */; };
+		2773090518A5D4070035C361 /* LDDEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773090418A5D4070035C361 /* LDDEventListViewController.m */; };
 		2773090718A5D4070035C361 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2773090618A5D4070035C361 /* Images.xcassets */; };
-		2773090E18A5D4070035C361 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2773090D18A5D4070035C361 /* XCTest.framework */; };
-		2773090F18A5D4070035C361 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277308EE18A5D4070035C361 /* Foundation.framework */; };
-		2773091018A5D4070035C361 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277308F218A5D4070035C361 /* UIKit.framework */; };
-		2773091818A5D4070035C361 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2773091618A5D4070035C361 /* InfoPlist.strings */; };
-		2773091A18A5D4070035C361 /* LocalDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773091918A5D4070035C361 /* LocalDemoTests.m */; };
+		2773092518A5D7D50035C361 /* LDDEventListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773092418A5D7D50035C361 /* LDDEventListCell.m */; };
+		2773092718A5DC4D0035C361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2773092618A5DC4D0035C361 /* Main.storyboard */; };
+		2773092A18A5DCD80035C361 /* LDDEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773092918A5DCD80035C361 /* LDDEvent.m */; };
+		2773092D18A5DDED0035C361 /* NSDate+BSPFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773092C18A5DDED0035C361 /* NSDate+BSPFoundation.m */; };
+		2773093018A5E0300035C361 /* NSString+BSPFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773092F18A5E0300035C361 /* NSString+BSPFoundation.m */; };
+		2773093418A5F4C70035C361 /* LDDAddEditEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773093318A5F4C70035C361 /* LDDAddEditEventViewController.m */; };
+		2773093818A606DC0035C361 /* LDDDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773093718A606DC0035C361 /* LDDDatePickerCell.m */; };
+		2773093E18A607000035C361 /* LDDTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773093D18A607000035C361 /* LDDTextFieldCell.m */; };
+		2773094118A607140035C361 /* LDDTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773094018A607140035C361 /* LDDTextViewCell.m */; };
+		2773094418A6071F0035C361 /* LDDDateDisplayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773094318A6071F0035C361 /* LDDDateDisplayCell.m */; };
+		2773094818A608E50035C361 /* NSArray+BSPTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773094718A608E50035C361 /* NSArray+BSPTouch.m */; };
+		2773094B18A6096B0035C361 /* LDDCenterLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773094A18A6096B0035C361 /* LDDCenterLabelCell.m */; };
+		2773094E18A60ACC0035C361 /* NSIndexPath+BSPTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773094D18A60ACC0035C361 /* NSIndexPath+BSPTouch.m */; };
+		2773095118A60B770035C361 /* LDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773095018A60B770035C361 /* LDD.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2773091118A5D4070035C361 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 277308E318A5D4070035C361 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 277308EA18A5D4070035C361;
-			remoteInfo = LocalDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		277308EB18A5D4070035C361 /* LocalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,15 +42,37 @@
 		277308FC18A5D4070035C361 /* LocalDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocalDemo-Prefix.pch"; sourceTree = "<group>"; };
 		277308FD18A5D4070035C361 /* LDDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDDAppDelegate.h; sourceTree = "<group>"; };
 		277308FE18A5D4070035C361 /* LDDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDDAppDelegate.m; sourceTree = "<group>"; };
-		2773090118A5D4070035C361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2773090318A5D4070035C361 /* LDDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDDViewController.h; sourceTree = "<group>"; };
-		2773090418A5D4070035C361 /* LDDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDDViewController.m; sourceTree = "<group>"; };
+		2773090318A5D4070035C361 /* LDDEventListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDDEventListViewController.h; sourceTree = "<group>"; };
+		2773090418A5D4070035C361 /* LDDEventListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDDEventListViewController.m; sourceTree = "<group>"; };
 		2773090618A5D4070035C361 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2773090C18A5D4070035C361 /* LocalDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2773090D18A5D4070035C361 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		2773091518A5D4070035C361 /* LocalDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocalDemoTests-Info.plist"; sourceTree = "<group>"; };
-		2773091718A5D4070035C361 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2773091918A5D4070035C361 /* LocalDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalDemoTests.m; sourceTree = "<group>"; };
+		2773092318A5D7D50035C361 /* LDDEventListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDEventListCell.h; sourceTree = "<group>"; };
+		2773092418A5D7D50035C361 /* LDDEventListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDEventListCell.m; sourceTree = "<group>"; };
+		2773092618A5DC4D0035C361 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2773092818A5DCD80035C361 /* LDDEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDEvent.h; sourceTree = "<group>"; };
+		2773092918A5DCD80035C361 /* LDDEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDEvent.m; sourceTree = "<group>"; };
+		2773092B18A5DDED0035C361 /* NSDate+BSPFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BSPFoundation.h"; sourceTree = "<group>"; };
+		2773092C18A5DDED0035C361 /* NSDate+BSPFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BSPFoundation.m"; sourceTree = "<group>"; };
+		2773092E18A5E0300035C361 /* NSString+BSPFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BSPFoundation.h"; sourceTree = "<group>"; };
+		2773092F18A5E0300035C361 /* NSString+BSPFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BSPFoundation.m"; sourceTree = "<group>"; };
+		2773093218A5F4C70035C361 /* LDDAddEditEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDAddEditEventViewController.h; sourceTree = "<group>"; };
+		2773093318A5F4C70035C361 /* LDDAddEditEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDAddEditEventViewController.m; sourceTree = "<group>"; };
+		2773093618A606DC0035C361 /* LDDDatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDDatePickerCell.h; sourceTree = "<group>"; };
+		2773093718A606DC0035C361 /* LDDDatePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDDatePickerCell.m; sourceTree = "<group>"; };
+		2773093C18A607000035C361 /* LDDTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDTextFieldCell.h; sourceTree = "<group>"; };
+		2773093D18A607000035C361 /* LDDTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDTextFieldCell.m; sourceTree = "<group>"; };
+		2773093F18A607140035C361 /* LDDTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDTextViewCell.h; sourceTree = "<group>"; };
+		2773094018A607140035C361 /* LDDTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDTextViewCell.m; sourceTree = "<group>"; };
+		2773094218A6071F0035C361 /* LDDDateDisplayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDDateDisplayCell.h; sourceTree = "<group>"; };
+		2773094318A6071F0035C361 /* LDDDateDisplayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDDateDisplayCell.m; sourceTree = "<group>"; };
+		2773094618A608E50035C361 /* NSArray+BSPTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BSPTouch.h"; sourceTree = "<group>"; };
+		2773094718A608E50035C361 /* NSArray+BSPTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BSPTouch.m"; sourceTree = "<group>"; };
+		2773094918A6096B0035C361 /* LDDCenterLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDCenterLabelCell.h; sourceTree = "<group>"; };
+		2773094A18A6096B0035C361 /* LDDCenterLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDCenterLabelCell.m; sourceTree = "<group>"; };
+		2773094C18A60ACC0035C361 /* NSIndexPath+BSPTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+BSPTouch.h"; sourceTree = "<group>"; };
+		2773094D18A60ACC0035C361 /* NSIndexPath+BSPTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+BSPTouch.m"; sourceTree = "<group>"; };
+		2773094F18A60B770035C361 /* LDD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDD.h; sourceTree = "<group>"; };
+		2773095018A60B770035C361 /* LDD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,16 +86,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2773090918A5D4070035C361 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2773090E18A5D4070035C361 /* XCTest.framework in Frameworks */,
-				2773091018A5D4070035C361 /* UIKit.framework in Frameworks */,
-				2773090F18A5D4070035C361 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				277308F418A5D4070035C361 /* LocalDemo */,
-				2773091318A5D4070035C361 /* LocalDemoTests */,
 				277308ED18A5D4070035C361 /* Frameworks */,
 				277308EC18A5D4070035C361 /* Products */,
 			);
@@ -93,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				277308EB18A5D4070035C361 /* LocalDemo.app */,
-				2773090C18A5D4070035C361 /* LocalDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,11 +120,19 @@
 		277308F418A5D4070035C361 /* LocalDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2773094518A608C80035C361 /* Extensions */,
+				2773093518A606B50035C361 /* Cells */,
+				2773094F18A60B770035C361 /* LDD.h */,
+				2773095018A60B770035C361 /* LDD.m */,
 				277308FD18A5D4070035C361 /* LDDAppDelegate.h */,
 				277308FE18A5D4070035C361 /* LDDAppDelegate.m */,
-				2773090018A5D4070035C361 /* Main.storyboard */,
-				2773090318A5D4070035C361 /* LDDViewController.h */,
-				2773090418A5D4070035C361 /* LDDViewController.m */,
+				2773090318A5D4070035C361 /* LDDEventListViewController.h */,
+				2773090418A5D4070035C361 /* LDDEventListViewController.m */,
+				2773093218A5F4C70035C361 /* LDDAddEditEventViewController.h */,
+				2773093318A5F4C70035C361 /* LDDAddEditEventViewController.m */,
+				2773092818A5DCD80035C361 /* LDDEvent.h */,
+				2773092918A5DCD80035C361 /* LDDEvent.m */,
+				2773092618A5DC4D0035C361 /* Main.storyboard */,
 				2773090618A5D4070035C361 /* Images.xcassets */,
 				277308F518A5D4070035C361 /* Supporting Files */,
 			);
@@ -134,22 +150,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2773091318A5D4070035C361 /* LocalDemoTests */ = {
+		2773093518A606B50035C361 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				2773091918A5D4070035C361 /* LocalDemoTests.m */,
-				2773091418A5D4070035C361 /* Supporting Files */,
+				2773092318A5D7D50035C361 /* LDDEventListCell.h */,
+				2773092418A5D7D50035C361 /* LDDEventListCell.m */,
+				2773093618A606DC0035C361 /* LDDDatePickerCell.h */,
+				2773093718A606DC0035C361 /* LDDDatePickerCell.m */,
+				2773093C18A607000035C361 /* LDDTextFieldCell.h */,
+				2773093D18A607000035C361 /* LDDTextFieldCell.m */,
+				2773093F18A607140035C361 /* LDDTextViewCell.h */,
+				2773094018A607140035C361 /* LDDTextViewCell.m */,
+				2773094218A6071F0035C361 /* LDDDateDisplayCell.h */,
+				2773094318A6071F0035C361 /* LDDDateDisplayCell.m */,
+				2773094918A6096B0035C361 /* LDDCenterLabelCell.h */,
+				2773094A18A6096B0035C361 /* LDDCenterLabelCell.m */,
 			);
-			path = LocalDemoTests;
+			name = Cells;
 			sourceTree = "<group>";
 		};
-		2773091418A5D4070035C361 /* Supporting Files */ = {
+		2773094518A608C80035C361 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2773091518A5D4070035C361 /* LocalDemoTests-Info.plist */,
-				2773091618A5D4070035C361 /* InfoPlist.strings */,
+				2773092B18A5DDED0035C361 /* NSDate+BSPFoundation.h */,
+				2773092C18A5DDED0035C361 /* NSDate+BSPFoundation.m */,
+				2773092E18A5E0300035C361 /* NSString+BSPFoundation.h */,
+				2773092F18A5E0300035C361 /* NSString+BSPFoundation.m */,
+				2773094618A608E50035C361 /* NSArray+BSPTouch.h */,
+				2773094718A608E50035C361 /* NSArray+BSPTouch.m */,
+				2773094C18A60ACC0035C361 /* NSIndexPath+BSPTouch.h */,
+				2773094D18A60ACC0035C361 /* NSIndexPath+BSPTouch.m */,
 			);
-			name = "Supporting Files";
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,24 +204,6 @@
 			productReference = 277308EB18A5D4070035C361 /* LocalDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2773090B18A5D4070035C361 /* LocalDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2773092018A5D4070035C361 /* Build configuration list for PBXNativeTarget "LocalDemoTests" */;
-			buildPhases = (
-				2773090818A5D4070035C361 /* Sources */,
-				2773090918A5D4070035C361 /* Frameworks */,
-				2773090A18A5D4070035C361 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2773091218A5D4070035C361 /* PBXTargetDependency */,
-			);
-			name = LocalDemoTests;
-			productName = LocalDemoTests;
-			productReference = 2773090C18A5D4070035C361 /* LocalDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,11 +213,6 @@
 				CLASSPREFIX = LDD;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "BigSprocket, LLC";
-				TargetAttributes = {
-					2773090B18A5D4070035C361 = {
-						TestTargetID = 277308EA18A5D4070035C361;
-					};
-				};
 			};
 			buildConfigurationList = 277308E618A5D4070035C361 /* Build configuration list for PBXProject "LocalDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -219,7 +228,6 @@
 			projectRoot = "";
 			targets = (
 				277308EA18A5D4070035C361 /* LocalDemo */,
-				2773090B18A5D4070035C361 /* LocalDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,16 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2773090718A5D4070035C361 /* Images.xcassets in Resources */,
+				2773092718A5DC4D0035C361 /* Main.storyboard in Resources */,
 				277308F918A5D4070035C361 /* InfoPlist.strings in Resources */,
-				2773090218A5D4070035C361 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2773090A18A5D4070035C361 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2773091818A5D4070035C361 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,51 +250,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2773090518A5D4070035C361 /* LDDViewController.m in Sources */,
+				2773090518A5D4070035C361 /* LDDEventListViewController.m in Sources */,
+				2773092D18A5DDED0035C361 /* NSDate+BSPFoundation.m in Sources */,
+				2773093E18A607000035C361 /* LDDTextFieldCell.m in Sources */,
+				2773094418A6071F0035C361 /* LDDDateDisplayCell.m in Sources */,
+				2773095118A60B770035C361 /* LDD.m in Sources */,
 				277308FB18A5D4070035C361 /* main.m in Sources */,
+				2773094818A608E50035C361 /* NSArray+BSPTouch.m in Sources */,
+				2773092A18A5DCD80035C361 /* LDDEvent.m in Sources */,
 				277308FF18A5D4070035C361 /* LDDAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2773090818A5D4070035C361 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2773091A18A5D4070035C361 /* LocalDemoTests.m in Sources */,
+				2773092518A5D7D50035C361 /* LDDEventListCell.m in Sources */,
+				2773093418A5F4C70035C361 /* LDDAddEditEventViewController.m in Sources */,
+				2773094B18A6096B0035C361 /* LDDCenterLabelCell.m in Sources */,
+				2773094118A607140035C361 /* LDDTextViewCell.m in Sources */,
+				2773093018A5E0300035C361 /* NSString+BSPFoundation.m in Sources */,
+				2773093818A606DC0035C361 /* LDDDatePickerCell.m in Sources */,
+				2773094E18A60ACC0035C361 /* NSIndexPath+BSPTouch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2773091218A5D4070035C361 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 277308EA18A5D4070035C361 /* LocalDemo */;
-			targetProxy = 2773091118A5D4070035C361 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		277308F718A5D4070035C361 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				277308F818A5D4070035C361 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2773090018A5D4070035C361 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2773090118A5D4070035C361 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2773091618A5D4070035C361 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2773091718A5D4070035C361 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -400,48 +381,6 @@
 			};
 			name = Release;
 		};
-		2773092118A5D4070035C361 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LocalDemo.app/LocalDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LocalDemo/LocalDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "LocalDemoTests/LocalDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		2773092218A5D4070035C361 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LocalDemo.app/LocalDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LocalDemo/LocalDemo-Prefix.pch";
-				INFOPLIST_FILE = "LocalDemoTests/LocalDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -459,14 +398,6 @@
 			buildConfigurations = (
 				2773091E18A5D4070035C361 /* Debug */,
 				2773091F18A5D4070035C361 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		2773092018A5D4070035C361 /* Build configuration list for PBXNativeTarget "LocalDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2773092118A5D4070035C361 /* Debug */,
-				2773092218A5D4070035C361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
