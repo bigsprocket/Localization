@@ -169,7 +169,7 @@
                                                 <!--2014-02-08 06:13:14 +0000-->
                                             </date>
                                             <timeZone key="timeZone" name="America/Los_Angeles">
-                                                <mutableData key="data">
+                                                <data key="data">
 VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
 y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
 5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
@@ -187,7 +187,7 @@ f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</mutableData>
+</data>
                                             </timeZone>
                                             <connections>
                                                 <action selector="dateChanged:" destination="1xJ-tz-qiQ" eventType="valueChanged" id="TZa-Gj-X4z"/>
@@ -265,6 +265,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="captionLabel" destination="Yb0-Lm-nSM" id="w19-5K-9Tg"/>
                                     <segue destination="Vdn-ud-dzg" kind="unwind" identifier="DeleteItem" unwindAction="editorUnwindDelete:" id="oU9-K3-8pG"/>
                                 </connections>
                             </tableViewCell>
