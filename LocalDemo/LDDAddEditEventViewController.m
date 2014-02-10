@@ -47,7 +47,7 @@ static int kTagDeleteConfirmation = 456;
     [self registerForNotifications];
     
     if (self.eventEditing) {
-        self.title = @"Detail";
+        self.title = [LDDStrings editingEventTitle];
 
         self.navigationItem.leftBarButtonItem = nil;
         self.navigationItem.hidesBackButton = NO;
@@ -63,7 +63,7 @@ static int kTagDeleteConfirmation = 456;
     } else {
         self.eventEditing = [[LDDEvent alloc] init];
         self.doneButton.enabled = NO;
-        self.title = @"Add Event";          // TODO: Localize
+        self.title = [LDDStrings addingEventTitle];
 
         tableStructure = @[
                            @[kKeyNameCell],
@@ -126,14 +126,14 @@ static int kTagDeleteConfirmation = 456;
 
     if ([key isEqualToString:kKeyDeleteCell]) {
         LDDCenterLabelCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LDDCenterLabelCell class])];
-        cell.caption = @"Delete";                               // TODO: Localize
+        cell.caption = [LDDStrings deleteAction];
         cell.captionColor = [UIColor colorWithRed:0.5 green:0 blue:0 alpha:1];
         
         return cell;
     } else if ([key isEqualToString:kKeyNoteCell]) {
         LDDTextViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LDDTextViewCell class])];
         cell.text = self.eventEditing.note;
-        cell.placeholderText = @"Note";                         // TODO: Localize
+        cell.placeholderText = [LDDStrings notePlaceholder];
         cell.blockChangingValue = ^(NSString *newString) {
             [weakSelf noteChanged:newString];
         };
@@ -143,15 +143,15 @@ static int kTagDeleteConfirmation = 456;
         return cell;
     } else if ([key isEqualToString:kKeyDateCell]) {
         LDDDateDisplayCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LDDDateDisplayCell class])];
-        cell.caption = @"Date";                                 // TODO: Localize
-        cell.noDatePlaceholder = @"(select)";                   // TODO: Localize
+        cell.caption = [LDDStrings dateCaption];
+        cell.noDatePlaceholder = [LDDStrings selectPlaceholder];
         cell.date = self.eventEditing.date;
 
         return cell;
     } else if ([key isEqualToString:kKeyNameCell]) {
         LDDTextFieldCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LDDTextFieldCell class])];
         cell.text = self.eventEditing.name;
-        cell.placeholderText = @"Event Name";                   // TODO: Localize
+        cell.placeholderText = [LDDStrings eventPlaceholder];
         cell.blockChangingValue = ^(NSString *newString) {
             [weakSelf nameChanged:newString];
         };
@@ -241,8 +241,8 @@ static int kTagDeleteConfirmation = 456;
 
 - (void)confirmDelete {
     UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self
-                                              cancelButtonTitle:@"Cancel"   // TODO: Localize
-                                         destructiveButtonTitle:@"Delete"   // TODO: Localize
+                                              cancelButtonTitle:[LDDStrings cancelAction]
+                                         destructiveButtonTitle:[LDDStrings deleteAction]
                                               otherButtonTitles:nil];
     sheet.tag = kTagDeleteConfirmation;
     [sheet showInView:self.view];

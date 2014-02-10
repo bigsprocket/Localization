@@ -29,7 +29,7 @@ static NSString * kKeyEditSegue = @"EditItem";
     [super viewDidLoad];
     [self fakeSomeData];
     
-    self.title = @"Events";                         // TODO: Localize
+    self.title = [LDDStrings eventListTitle];
 }
 
 #pragma mark - tableview delegate/datasource

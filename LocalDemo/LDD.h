@@ -16,4 +16,5 @@ typedef void (^ObjectReturningBlock) (NSObject *obj);
 
 #import "NSDate+LDD.h"
 #import "NSIndexPath+LDD.h"
+#import "LDDStrings.h"
 
