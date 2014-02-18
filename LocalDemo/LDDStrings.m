@@ -19,7 +19,7 @@
 }
 
 + (NSString *)addingEventTitle {
-    return NSLocalizedString(@"Add", @"Add event title");
+    return NSLocalizedString(@"Add Event", @"Add event title");
 }
 
 + (NSString *)cancelAction {
