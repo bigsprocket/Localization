@@ -11,7 +11,7 @@
 @interface LDDTextViewCell : UITableViewCell <UITextViewDelegate>
 
 @property (nonatomic, strong) NSString *text;
-@property (nonatomic, strong) NSString *placeholderText;
+@property (nonatomic, strong) NSString *placeholder;
 @property (nonatomic, assign) BOOL editable;
 
 @property (nonatomic, copy) IdReturningBlock blockChangingValue;

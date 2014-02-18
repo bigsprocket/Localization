@@ -47,7 +47,8 @@ static NSString * kKeyEditSegue = @"EditItem";
     LDDEvent *event = [self.events objectAtIndex:indexPath.row];
     
     cell.nameLabel.text = event.name;
-    cell.dateLabel.text = [event.date stringWithFormat:@"MMM dd, yyyy"]; // TODO: Localize
+//    cell.dateLabel.text = [event.date stringWithFormat:@"MMM dd, yyyy"]; // TODO: Localize
+    cell.dateLabel.text = [event.date stringWithTemplate:@"MMM dd, yyyy"]; // TODO: Localize
     cell.noteLabel.text = event.note;
     
     return cell;

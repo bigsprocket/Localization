@@ -133,7 +133,7 @@ static int kTagDeleteConfirmation = 456;
     } else if ([key isEqualToString:kKeyNoteCell]) {
         LDDTextViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LDDTextViewCell class])];
         cell.text = self.eventEditing.note;
-        cell.placeholderText = [LDDStrings notePlaceholder];
+        cell.placeholder = [LDDStrings notePlaceholder];
         cell.blockChangingValue = ^(NSString *newString) {
             [weakSelf noteChanged:newString];
         };
@@ -151,7 +151,7 @@ static int kTagDeleteConfirmation = 456;
     } else if ([key isEqualToString:kKeyNameCell]) {
         LDDTextFieldCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LDDTextFieldCell class])];
         cell.text = self.eventEditing.name;
-        cell.placeholderText = [LDDStrings eventPlaceholder];
+        cell.placeholder = [LDDStrings eventPlaceholder];
         cell.blockChangingValue = ^(NSString *newString) {
             [weakSelf nameChanged:newString];
         };

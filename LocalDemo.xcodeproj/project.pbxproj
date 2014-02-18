@@ -33,12 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		274AA12818B408370085AE93 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		275C79FE18A85D97003AACF6 /* LDDStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDStrings.h; sourceTree = "<group>"; };
 		275C79FF18A85D97003AACF6 /* LDDStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDStrings.m; sourceTree = "<group>"; };
 		275C7A0218A85FB7003AACF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		275C7A0518A85FC4003AACF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		275C7A0918A86B82003AACF6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		275C7A0A18A8827D003AACF6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		275CC27318A847A80026D5CC /* StyleSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StyleSettings.plist; sourceTree = "<group>"; };
 		277308EB18A5D4070035C361 /* LocalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277308EE18A5D4070035C361 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -307,7 +307,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				275C7A0518A85FC4003AACF6 /* Base */,
-				275C7A0A18A8827D003AACF6 /* es */,
+				274AA12818B408370085AE93 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
